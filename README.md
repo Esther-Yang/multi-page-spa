@@ -1,6 +1,6 @@
 # Multi Page SPA
 
-A React App that used to demostrate multi-page spa.
+A React App that used to demonstrate multi-page spa.
 
 # Feature
 
@@ -27,21 +27,21 @@ npm install react-rounter-dom
 </Route>
 ```
 
-3. Used `BrowserRounter` from `react-rounter-dom`.
+3. Used `<BrowserRounter>` from `react-rounter-dom`.
 
 ```
 //index.js
 <BrowserRounter><App/></BrowserRounter>
 ```
 
-4. Used `Link ` from `react-rounter-dom` which will be rendered to `<a href="#">`. The reason we do not use `<a>` directly is because it will automatically send html request to load a whole page, and all the states will gone.
+4. Used `<Link>` from `react-rounter-dom` which will be rendered to `<a href="#">`. The reason we do not use `<a>` directly is because it will automatically send html request to load a whole page, and all the states will gone.
 
 ```
 //MainHeader.js
 <Link to="/welcome">Welcome</Link>
 ```
 
-5. Used `NavLink` from `react-rounter-dom` to have active links highlighted at the nav bar.
+5. Used `<NavLink>` from `react-rounter-dom` to have active links highlighted at the nav bar.
 
 ```
 //MainHeader.js
@@ -51,7 +51,7 @@ npm install react-rounter-dom
 .header a.active
 ```
 
-6. Used Dynamic Routes with Params. Syntax is a colon followed by identifier.
+6. Used Dynamic Routes with Params. Syntax is a **colon followed by identifier**.
 
 ```
 <Route path="product-detail/:productId">
