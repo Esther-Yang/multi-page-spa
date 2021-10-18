@@ -7,8 +7,8 @@ A React App that used to demonstrate multi-page spa.
 - Act like a multi-page application using React Router.
 - Two pages
   - Welcome page: shows "The Welcome Page".
-  - Products page: shows "The Products Page" and a list products.
-- The CSS is not complete.
+  - Products page: shows "The Products Page" and a list of products.
+- \*The CSS is not complete.
 
 # Procedure
 
@@ -18,7 +18,7 @@ A React App that used to demonstrate multi-page spa.
 npm install react-rounter-dom
 ```
 
-2. Used `Route` from `react-rounter-dom`.
+2. Used `Route` from `react-router-dom`.
 
 ```
 //App.js
@@ -27,21 +27,21 @@ npm install react-rounter-dom
 </Route>
 ```
 
-3. Used `<BrowserRounter>` from `react-rounter-dom`.
+3. Used `<BrowserRouter>` from `react-router-dom`.
 
 ```
 //index.js
-<BrowserRounter><App/></BrowserRounter>
+<BrowserRouter><App/></BrowserRouter>
 ```
 
-4. Used `<Link>` from `react-rounter-dom` which will be rendered to `<a href="#">`. The reason we do not use `<a>` directly is because it will automatically send html request to load a whole page, and all the states will gone.
+4. Used `<Link>` from `react-router-dom` which will be rendered to `<a href="#">`. The reason we do not use `<a>` directly is because it will automatically send html request to load a whole page, and all the states will gone.
 
 ```
 //MainHeader.js
 <Link to="/welcome">Welcome</Link>
 ```
 
-5. Used `<NavLink>` from `react-rounter-dom` to have active links highlighted at the nav bar.
+5. Used `<NavLink>` from `react-router-dom` to have active links highlighted at the nav bar.
 
 ```
 //MainHeader.js
@@ -57,7 +57,7 @@ npm install react-rounter-dom
 <Route path="product-detail/:productId">
 ```
 
-7. Extracted Route Params with `useParams`, a custom hook from `react-rounter-dom`.
+7. Extracted Route Params with `useParams`, a custom hook from `react-router-dom`.
 
 ```
 //ProductDetail.js
